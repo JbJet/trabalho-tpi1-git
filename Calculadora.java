@@ -20,6 +20,8 @@ public class Calculadora {
                     throw new IllegalArgumentException("Divisão por zero não é permitida!");
                 }
                 return (double) a / b;
+            default:
+                throw new IllegalArgumentException("Operação inválida: " + operacao);
         }
     }
 
